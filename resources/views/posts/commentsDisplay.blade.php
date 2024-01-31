@@ -3,6 +3,9 @@
 <strong>{{ $comment->user->name }}</strong>
 <p>{{ $comment->body }}</p>
 <a href="" id="reply"></a>
+
+
+{{-- Reply Section --}}
 <form method="post" action="{{ route('comments.store') }}">
 @csrf
 <div class="form-group">

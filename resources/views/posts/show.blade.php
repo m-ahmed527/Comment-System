@@ -38,6 +38,7 @@
                             'comments' => $post->comments,
                             'post_id' => $post->id,
                         ])
+                        {{-- @dd($post->comments) --}}
                         <hr />
                         <h4>Add comment</h4>
                         <form method="post" action="{{ route('comments.store') }}">
